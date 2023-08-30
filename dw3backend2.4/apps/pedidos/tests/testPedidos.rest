@@ -1,0 +1,53 @@
+### teste de buscar todos os pedidos
+GET http://localhost:40000/GetAllPedidos HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NzQ3ODI5NzksInVzZXJuYW1lIjoicXdlIn0.SlYYCm8J6wlpb3i1jJcSvhSz6VjwKvzPOxza8P6-hzo
+
+{    
+    
+}
+
+### teste de buscar pedido por ID
+POST http://localhost:40000/GetPedidoByID HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NzQ3ODI5NzksInVzZXJuYW1lIjoicXdlIn0.SlYYCm8J6wlpb3i1jJcSvhSz6VjwKvzPOxza8P6-hzo
+
+{    
+    "pedidoid": 1
+}
+
+### teste de inserção de pedido
+POST http://localhost:40000/InsertPedidos HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NzM0ODE2NDEsInVzZXJuYW1lIjoicXdlIn0.LRKs8uvt-SJ9E9dMGYRkCs7HhMDlqVmwap_zcaoONeQ
+
+{    
+      "pedidoid": "2",
+      "numero": "222",
+      "data": "2023-01-31T03:00:00.000Z",
+      "valortotal": "5500.60",
+      "clienteid": "2",
+      "deleted": false
+}
+
+### teste de atualização de pedido
+POST http://localhost:40000/UpdatePedidos HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NzM0ODE2NDEsInVzZXJuYW1lIjoicXdlIn0.LRKs8uvt-SJ9E9dMGYRkCs7HhMDlqVmwap_zcaoONeQ
+
+{    
+    "pedidoid": 1,
+    "codigo": "xfisio",
+    "descricao": "xBacharelado em Fisioterapia",
+    "ativo": true,
+    "deleted": false 
+}
+
+### teste de atualização de pedido
+POST http://localhost:40000/DeletePedidos HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NzM0ODE2NDEsInVzZXJuYW1lIjoicXdlIn0.LRKs8uvt-SJ9E9dMGYRkCs7HhMDlqVmwap_zcaoONeQ
+
+{    
+    "pedidoid": 1  
+}

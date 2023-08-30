@@ -1,0 +1,55 @@
+### teste de buscar cliente por ID
+POST http://localhost:40000/Login HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NzQ3ODI5NzksInVzZXJuYW1lIjoicXdlIn0.SlYYCm8J6wlpb3i1jJcSvhSz6VjwKvzPOxza8P6-hzo
+
+{    
+    "username": "qwe",
+    "password": "qwe"
+}
+
+
+### teste de buscar todos os clientes
+GET http://localhost:40000/getAllClientes HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5Mjc5ODg2MSwiZXhwIjoxNjkyNzk5NDYxfQ.43OGaDLf0iQHUXgfM8wBETYE5A8TGHR1G0hfupccsfM
+
+{    
+    
+}
+
+### teste de buscar cliente por ID
+POST http://localhost:40000/getClienteByID HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NzE3OCwiZXhwIjoxNjkzMzk3Nzc4fQ.EezpOMc_2UOvUb0ujlgJ1Tp9dlcg0Wkz_q8kixdxa6E
+
+{    
+    "clienteid": 2
+}
+
+### teste de inserção de cliente 
+POST http://localhost:40000/insertClientes HTTP/1.1 
+content-type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NzE3OCwiZXhwIjoxNjkzMzk3Nzc4fQ.EezpOMc_2UOvUb0ujlgJ1Tp9dlcg0Wkz_q8kixdxa6E
+
+{
+"clienteid": 0, "prontuario": "pront5", "nome": "Carlos das Matias", "endereco": " Rua das couves", "rendafamiliar": 10000, "datanascimento": "1999-12-12", "cursoid": 2, "deleted": false
+}
+
+### teste de atualização de cliente 
+POST http://localhost:40000/updateClientes HTTP/1.1 
+content-type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NzE3OCwiZXhwIjoxNjkzMzk3Nzc4fQ.EezpOMc_2UOvUb0ujlgJ1Tp9dlcg0Wkz_q8kixdxa6E
+
+{
+"clienteid": 2, "codigo": "CLI09", "nome": "NomeAlterado", "endereco": "RuaAlterada", "ativo": true, "deleted": false
+}
+
+### teste de atualização de cliente 
+POST http://localhost:40000/DeleteClientes HTTP/1.1 
+content-type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MTQ5MDg3NCwiZXhwIjoxNjkxNDkxNDc0fQ.1ABhMgWYm8gGKy7q90GOPQpNoY5M1LLzpCltKxFjcEo
+
+{
+"clienteid": 2
+}
