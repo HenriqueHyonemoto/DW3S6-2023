@@ -1,0 +1,28 @@
+### teste de buscar aluno por ID
+POST http://localhost:40001/Login HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NzQ3ODI5NzksInVzZXJuYW1lIjoicXdlIn0.SlYYCm8J6wlpb3i1jJcSvhSz6VjwKvzPOxza8P6-hzo
+
+{    
+    "username": "qwe",
+    "password": "qwe"
+}
+
+
+### teste de buscar todos os alunos
+GET http://localhost:40001/getAllAlunos HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NDExMCwiZXhwIjoxNjkzMzk0NzEwfQ.88DTMnVQaHaaM_9-betOgDiiHAhdcMtplaojpWK-6NY
+
+{    
+    
+}
+
+### teste de buscar aluno por ID
+POST http://localhost:40001/getAlunoByID HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5Mjc5OTY0MSwiZXhwIjoxNjkyODAwMjQxfQ.FtJ-JsVEPNsIJZ4XrT5CpPwRxdTfprEcb9jDIzvqevk
+
+{    
+    "alunoid": 2
+}
