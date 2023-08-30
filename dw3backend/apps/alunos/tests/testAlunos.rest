@@ -1,5 +1,5 @@
 ### teste de buscar aluno por ID
-POST http://localhost:40001/Login HTTP/1.1
+POST http://localhost:40000/Login HTTP/1.1
 content-type: application/json
 //Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NzQ3ODI5NzksInVzZXJuYW1lIjoicXdlIn0.SlYYCm8J6wlpb3i1jJcSvhSz6VjwKvzPOxza8P6-hzo
 
@@ -10,19 +10,46 @@ content-type: application/json
 
 
 ### teste de buscar todos os alunos
-GET http://localhost:40001/getAllAlunos HTTP/1.1
+GET http://localhost:40000/getAllAlunos HTTP/1.1
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NDExMCwiZXhwIjoxNjkzMzk0NzEwfQ.88DTMnVQaHaaM_9-betOgDiiHAhdcMtplaojpWK-6NY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5Mjc5ODg2MSwiZXhwIjoxNjkyNzk5NDYxfQ.43OGaDLf0iQHUXgfM8wBETYE5A8TGHR1G0hfupccsfM
 
 {    
     
 }
 
 ### teste de buscar aluno por ID
-POST http://localhost:40001/getAlunoByID HTTP/1.1
+POST http://localhost:40000/getAlunoByID HTTP/1.1
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5Mjc5OTY0MSwiZXhwIjoxNjkyODAwMjQxfQ.FtJ-JsVEPNsIJZ4XrT5CpPwRxdTfprEcb9jDIzvqevk
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NzE3OCwiZXhwIjoxNjkzMzk3Nzc4fQ.EezpOMc_2UOvUb0ujlgJ1Tp9dlcg0Wkz_q8kixdxa6E
 
 {    
     "alunoid": 2
+}
+
+### teste de inserção de aluno 
+POST http://localhost:40000/insertAlunos HTTP/1.1 
+content-type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NzE3OCwiZXhwIjoxNjkzMzk3Nzc4fQ.EezpOMc_2UOvUb0ujlgJ1Tp9dlcg0Wkz_q8kixdxa6E
+
+{
+"alunoid": 0, "prontuario": "pront5", "nome": "Carlos das Matias", "endereco": " Rua das couves", "rendafamiliar": 10000, "datanascimento": "1999-12-12", "cursoid": 2, "deleted": false
+}
+
+### teste de atualização de aluno 
+POST http://localhost:40000/updateAlunos HTTP/1.1 
+content-type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NzE3OCwiZXhwIjoxNjkzMzk3Nzc4fQ.EezpOMc_2UOvUb0ujlgJ1Tp9dlcg0Wkz_q8kixdxa6E
+
+{
+"alunoid": 2, "prontuario": "pront109", "nome": "xJosé das Neves", "endereco": "x Rua das couves", "rendafamiliar": 0, "datanascimento": "1999-12-12", "cursoid": 2, "deleted": false
+}
+
+### teste de atualização de aluno 
+POST http://localhost:40000/DeleteAlunos HTTP/1.1 
+content-type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MTQ5MDg3NCwiZXhwIjoxNjkxNDkxNDc0fQ.1ABhMgWYm8gGKy7q90GOPQpNoY5M1LLzpCltKxFjcEo
+
+{
+"alunoid": 55
 }
