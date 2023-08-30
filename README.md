@@ -7,3 +7,5 @@
 # Lembrar de atualizar o token
 
 # git config --global --unset-all
+
+git config --global --unset-all
