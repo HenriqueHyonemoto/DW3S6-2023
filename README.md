@@ -25,7 +25,7 @@ git config --global --unset user.email
 
 # Caso erro em commit
 ```
-git congig pull.rebase false
+git config pull.rebase false
 ```
 ```
 git pull
