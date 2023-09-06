@@ -19,24 +19,25 @@ const GetPedidoByID = async (pedidoIDPar) => {
 };
 
 const InsertPedidos = async (registroPar) => {
-  console.log("[InsertPedido]",registroPar)
+  console.log("[InsertPedidos]",registroPar)
   //@ Atenção: aqui já começamos a utilizar a variável msg para retornor erros de banco de dados.
   let linhasAfetadas;
   let msg = "ok";
   try {
     linhasAfetadas = (
       await db.query(
-        "INSERT INTO pedidos " + "values(default, $1, $2, $3, $4)",
+        "INSERT INTO pedidos " + "values(default, $1, $2, $3, $4, $5)",
         [
-          registroPar.codigo,
           registroPar.numero,
-          registroPar.ativo,
+          registroPar.data,
+          registroPar.valortotal,
+          registroPar.clienteid,
           registroPar.deleted,
         ]
       )
     ).rowCount;
   } catch (error) {
-    msg = "[mdlPedidos|insertPedidos] " + error.detail;
+    msg = "[mdlPedidos|InsertPedidos] " + error.detail;
     linhasAfetadas = -1;
   }
 
@@ -44,23 +45,26 @@ const InsertPedidos = async (registroPar) => {
 };
 
 const UpdatePedidos = async (registroPar) => {
+  console.log("[UpdatePedidos]",registroPar)
   let linhasAfetadas;
   let msg = "ok";
   try {
     linhasAfetadas = (
       await db.query(
         "UPDATE pedidos SET " +
-          "codigo = $2, " +
-          "numero = $3, " +
-          "ativo = $4, " +
-          "deleted = $5 " +          
+          "numero = $2, " +
+          "data = $3, " +
+          "valortotal = $4, " +
+          "clienteid = $5, " +
+          "deleted = $6 " +              
           "WHERE pedidoid = $1",
         [
-            registroPar.pedidoid  ,
-            registroPar.codigo   ,
-            registroPar.numero,
-            registroPar.ativo    ,
-            registroPar.deleted  ,          
+          registroPar.pedidoid,
+          registroPar.numero,
+          registroPar.data,
+          registroPar.valortotal,
+          registroPar.clienteid,
+          registroPar.deleted,         
         ]
       )
     ).rowCount;

@@ -22,9 +22,8 @@ content-type: application/json
 //Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NzM0ODE2NDEsInVzZXJuYW1lIjoicXdlIn0.LRKs8uvt-SJ9E9dMGYRkCs7HhMDlqVmwap_zcaoONeQ
 
 {    
-      "pedidoid": "2",
-      "numero": "222",
-      "data": "2023-01-31T03:00:00.000Z",
+      "numero": "12000",
+      "data": "2023-12-07",
       "valortotal": "5500.60",
       "clienteid": "2",
       "deleted": false
@@ -36,11 +35,12 @@ content-type: application/json
 //Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NzM0ODE2NDEsInVzZXJuYW1lIjoicXdlIn0.LRKs8uvt-SJ9E9dMGYRkCs7HhMDlqVmwap_zcaoONeQ
 
 {    
-    "pedidoid": 1,
-    "codigo": "xfisio",
-    "descricao": "xBacharelado em Fisioterapia",
-    "ativo": true,
-    "deleted": false 
+    "pedidoid": "15",
+    "numero": "413",
+    "data": "2023-08-07",
+    "valortotal": "4400.60",
+    "clienteid": "2",
+    "deleted": false
 }
 
 ### teste de atualização de pedido
