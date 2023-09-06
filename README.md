@@ -6,6 +6,7 @@
 
 # Lembrar de atualizar o token
 
-# git config --global --unset-all
+# git config --global --unset user.name
+# git config --global --unset user.email
 
-git config --global --unset-all
+
