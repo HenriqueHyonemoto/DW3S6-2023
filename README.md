@@ -1,13 +1,19 @@
 # Diretorio
 ```
-# dw3
+dw3
 ```
 # ------------------------------------
 # Subir para o git 
-
-# git add .
-# git commit -m "Colocar uma descricao"
-# git push -u origin main
+```
+git add .
+```
+```
+git commit -m "Colocar uma descricao"
+```
+```
+git push -u origin main
+```
+```
 
 # ------------------------------------
 # Deslogar
