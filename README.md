@@ -18,22 +18,22 @@ git push -u origin main
 # ------------------------------------
 # Deslogar
 ```
-# git config --global --unset user.name
+git config --global --unset user.name
 ```
 ```
-# git config --global --unset user.email
+git config --global --unset user.email
 ```
 
 # ------------------------------------
 # Caso erro em commit
 ```
-# git congig pull.rebase false
+git congig pull.rebase false
 ```
 ```
-# git pull
+git pull
 ```
 ```
-# git push -u origin main
+git push -u origin main
 ```
 # ------------------------------------
 
