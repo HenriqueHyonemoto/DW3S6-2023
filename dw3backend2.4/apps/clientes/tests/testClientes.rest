@@ -24,7 +24,7 @@ content-type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NzE3OCwiZXhwIjoxNjkzMzk3Nzc4fQ.EezpOMc_2UOvUb0ujlgJ1Tp9dlcg0Wkz_q8kixdxa6E
 
 {    
-    "clienteid": 2
+    "clienteid": 3
 }
 
 ### teste de inserção de cliente 
@@ -33,7 +33,12 @@ content-type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NzE3OCwiZXhwIjoxNjkzMzk3Nzc4fQ.EezpOMc_2UOvUb0ujlgJ1Tp9dlcg0Wkz_q8kixdxa6E
 
 {
-"clienteid": 0, "prontuario": "pront5", "nome": "Carlos das Matias", "endereco": " Rua das couves", "rendafamiliar": 10000, "datanascimento": "1999-12-12", "cursoid": 2, "deleted": false
+"clienteid": 6, 
+"codigo": "222", 
+"nome": "Fotocopia", 
+"endereco": " Rua dos bobos", 
+"ativo":true,
+"deleted": false
 }
 
 ### teste de atualização de cliente 
@@ -42,7 +47,7 @@ content-type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NzE3OCwiZXhwIjoxNjkzMzk3Nzc4fQ.EezpOMc_2UOvUb0ujlgJ1Tp9dlcg0Wkz_q8kixdxa6E
 
 {
-"clienteid": 2, "codigo": "CLI09", "nome": "NomeAlterado", "endereco": "RuaAlterada", "ativo": true, "deleted": false
+"clienteid": 4, "codigo": "CLI10", "nome": "NomeAlterado", "endereco": "RuaAlterada", "ativo": true, "deleted": false
 }
 
 ### teste de delete de cliente 
@@ -51,5 +56,5 @@ content-type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MTQ5MDg3NCwiZXhwIjoxNjkxNDkxNDc0fQ.1ABhMgWYm8gGKy7q90GOPQpNoY5M1LLzpCltKxFjcEo
 
 {
-"clienteid": 2
+"clienteid": 4
 }
