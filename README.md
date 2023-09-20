@@ -35,4 +35,15 @@ git push -u origin main
 ```
 
 
+# Iniciar no Windows
+
+```
+set DEBUG=dw3frontNode:*
+```
+```
+npm start
+```
+
+
+
 # Lembrar de atualizar o token

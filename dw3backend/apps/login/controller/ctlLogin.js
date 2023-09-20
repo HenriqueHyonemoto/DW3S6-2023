@@ -11,7 +11,6 @@ const Login = async (req, res, next) => {
   
   if (bCrypt.compareSync(req.body.password, credencial[0].password)) {
     //auth ok
-    console.log("Valor chave:",process.env.SECRET_API );
     const username = credencial[0].username;
     const token = jwt.sign({ username }, process.env.SECRET_API, {
       expiresIn: 600, // expires in 10min
