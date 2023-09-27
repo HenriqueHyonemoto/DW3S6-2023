@@ -1,4 +1,14 @@
-// DEBUG=dw3frontnode:* npm start
+//usuario e senha: qwe
+
+// Linux
+//DEBUG=dw3frontnode:* npm start
+
+//Windows
+
+//set DEBUG=dw3frontNode:*
+//npm start
+
+
 
 var createError = require('http-errors');
 var express = require('express');
@@ -11,7 +21,7 @@ require('dotenv').config();
 
 var indexRouter = require('./routes/index');
 var alunosRouter = require('./routes/rte_alunos');
-//var cursosRouter = require('./routes/rte_cursos');
+var cursosRouter = require('./routes/rte_cursos');
 
 var app = express();
 
@@ -39,7 +49,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/alunos', alunosRouter);
-//app.use('/cursos',  cursosRouter);
+app.use('/cursos',  cursosRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
