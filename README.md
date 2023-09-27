@@ -44,6 +44,12 @@ set DEBUG=dw3frontNode:*
 npm start
 ```
 
+# Usuario e Senha
+
+```
+qwe
+```
 
 
-# Lembrar de atualizar o token
+
+# *Lembrar de atualizar o token
