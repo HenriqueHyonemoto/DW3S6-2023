@@ -45,6 +45,9 @@ npm start
 ```
 
 # Extensão Do Test
+```
+REST Client
+```
 ![image](https://github.com/HenriqueHyonemoto/DW3S6-2023/assets/91375748/56b6c619-1c73-4371-b630-bea222a389e8)
 
 
